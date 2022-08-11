@@ -123,3 +123,63 @@ a:hover {
     background: #1b1b1b;
     color: #fff;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    overflow: hidden;
+}
+
+td,
+th {
+    border-top: 1px solid #ecf0f1;
+    padding: 10px;
+}
+
+td {
+    border-left: 1px solid #ecf0f1;
+    border-right: 1px solid #ecf0f1;
+}
+
+th {
+    background-color: #4ecdc4;
+}
+
+tr:nth-of-type(even) td {
+    background-color: lighten(#4ecdc4, 35%);
+}
+
+
+/* blog form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+}
+
+#show {
+    display: flex;
+    flex-wrap: wrap;
+}
